@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                sh '/Users/edwinamoo/.jenkins/projects/apache-maven-3.9.6/bin/mvn mvn -f pom.xml clean package'
+                sh '/Users/edwinamoo/.jenkins/projects/apache-maven-3.9.6/bin/mvn -f pom.xml clean package'
             }
             post {
                 success {
