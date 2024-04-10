@@ -17,7 +17,7 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "cd /usr/local/bin/"
-                sh "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
+                sh "docker build -t tomcatsamplewebapp:${env.BUILD_ID} ."
             }
         }
 
